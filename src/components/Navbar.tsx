@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile dropdown menu */}
+      
       {isOpen && (
         <div className="md:hidden flex flex-col px-4 pb-4 space-y-2 bg-black">
           {navItems.map(({ path, label, icon: Icon }) => (
