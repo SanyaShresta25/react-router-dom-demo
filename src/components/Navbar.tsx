@@ -1,8 +1,9 @@
-
+import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Home, User, FileText, AlertCircle, LogIn } from 'lucide-react';
+import { Home, User, FileText, AlertCircle, LogIn, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -16,24 +17,51 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-black text-white p-4">
-      <div className="max-w-6xl mx-auto flex justify-between items-center">
+    <nav className="bg-black text-white">
+      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <h1 className="text-xl font-bold">React Router App</h1>
-        <div className="flex flex-wrap gap-2">
+
+        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
+    
+        <div className="hidden md:flex gap-4">
           {navItems.map(({ path, label, icon: Icon }) => (
             <button
               key={path}
               onClick={() => navigate(path)}
-              className={`flex items-center gap-1 px-3 py-2 rounded text-sm ${
+              className={`flex items-center gap-2 px-3 py-2 rounded text-sm ${
                 location.pathname === path ? 'bg-gray-700' : 'hover:bg-gray-800'
               }`}
             >
               <Icon size={16} />
-              <span>{label}</span>
+              {label}
             </button>
           ))}
         </div>
       </div>
+
+      {/* Mobile dropdown menu */}
+      {isOpen && (
+        <div className="md:hidden flex flex-col px-4 pb-4 space-y-2 bg-black">
+          {navItems.map(({ path, label, icon: Icon }) => (
+            <button
+              key={path}
+              onClick={() => {
+                navigate(path);
+                setIsOpen(false);
+              }}
+              className={`flex items-center gap-2 px-3 py-2 rounded text-sm text-left ${
+                location.pathname === path ? 'bg-gray-700' : 'hover:bg-gray-800'
+              }`}
+            >
+              <Icon size={16} />
+              {label}
+            </button>
+          ))}
+        </div>
+      )}
     </nav>
   );
 };
