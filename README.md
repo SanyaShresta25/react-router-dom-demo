@@ -17,12 +17,12 @@ A modern React demo application using **React Router DOM v6** showcasing routing
 
 | Task | Description |
 |------|-------------|
-| ✅ Users Route | Integrated with [DummyJSON Users API](https://dummyjson.com/docs/users#users-all) |
-| ✅ Posts Route | Integrated with [DummyJSON Posts API](https://dummyjson.com/docs/posts#posts-all) |
-| ✅ Search Bar in Posts | Uses [Post Search API](https://dummyjson.com/docs/posts#posts-search) |
-| ✅ Dynamic Post Details | View individual posts using [Post Details API](https://dummyjson.com/docs/posts#posts-single) |
-| ✅ 404 Page | Custom design for unknown routes |
-| ✅ Extra Static Routes | Added **About** and **Contact** pages |
+|  Users Route | Integrated with [DummyJSON Users API](https://dummyjson.com/docs/users#users-all) |
+|  Posts Route | Integrated with [DummyJSON Posts API](https://dummyjson.com/docs/posts#posts-all) |
+|  Search Bar in Posts | Uses [Post Search API](https://dummyjson.com/docs/posts#posts-search) |
+|  Dynamic Post Details | View individual posts using [Post Details API](https://dummyjson.com/docs/posts#posts-single) |
+|  404 Page | Custom design for unknown routes |
+|  Extra Static Routes | Added **About** and **Contact** pages |
 
 ---
 
