@@ -56,14 +56,4 @@ Here's a more **aesthetic and pastel-themed version** of your `Tech Stack` and `
 </div>
 
 ---
-
-### 🪄 Notes:
-
-* These badge color codes were selected from pastel color palettes to enhance aesthetics.
-* You can use [Shields.io](https://shields.io/) and pick your custom `color` hex for each badge.
-* All links remain clickable in markdown, and this layout looks especially beautiful when rendered in Canva Docs or GitHub README.
-
-Would you like me to convert this to a `.md` file or Canva image layout?
-
-
 > 💡 Built for learning, styled with love, and routed with precision 🚀
