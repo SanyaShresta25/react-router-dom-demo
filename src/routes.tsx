@@ -1,4 +1,3 @@
-
 import type { RouteObject } from 'react-router-dom';
 import Layout from './components/Layout';
 
@@ -6,6 +5,7 @@ import Landing from './pages/Landing';
 import About from './pages/About';
 import Users from './pages/Users';
 import Posts from './pages/Posts';
+import PostDetails from './pages/PostDetails'; 
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import NotFound from './pages/NotFound';
@@ -19,6 +19,7 @@ const routes: RouteObject[] = [
       { path: 'about', element: <About /> },
       { path: 'users', element: <Users /> },
       { path: 'posts', element: <Posts /> },
+      { path: 'posts/:id', element: <PostDetails /> },
       { path: 'contact', element: <Contact /> },
       { path: 'login', element: <Login /> },
       { path: '*', element: <NotFound /> },
