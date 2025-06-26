@@ -26,23 +26,44 @@ A modern React demo application using **React Router DOM v6** showcasing routing
 
 ---
 
+Here's a more **aesthetic and pastel-themed version** of your `Tech Stack` and `Connect with Me` sections. The badge styles now use **softer tones**, better contrast, and an overall pleasing visual layout — ideal for a professional and visually polished README or Canva layout.
+
+---
+
 ## ⚙️ Tech Stack
 
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![React Router](https://img.shields.io/badge/React%20Router-v6-red?style=for-the-badge&logo=reactrouter&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-FFD700?style=for-the-badge&logo=vite&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+<div align="center">
+
+![React](https://img.shields.io/badge/React-ABE4FF?style=for-the-badge\&logo=react\&logoColor=black)
+![React Router](https://img.shields.io/badge/React_Router_v6-FDC5C5?style=for-the-badge\&logo=reactrouter\&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-B4F8C8?style=for-the-badge\&logo=tailwind-css\&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-FFF4C2?style=for-the-badge\&logo=vite\&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-D2C2FF?style=for-the-badge\&logo=typescript\&logoColor=black)
+
+</div>
 
 ---
 
 ## 🙋‍♀️ Connect with Me
 
-[![GitHub](https://img.shields.io/badge/GitHub-SanyaShresta25-333?style=for-the-badge&logo=github)](https://github.com/SanyaShresta25)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sanya%20Shresta%20Jathanna-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sanya-shresta-jathanna/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-sanyashresta.netlify.app-FFB6C1?style=for-the-badge&logo=internet-explorer&logoColor=black)](https://sanyashresta.netlify.app/)
-[![Email](https://img.shields.io/badge/Email-shrestasanya@gmail.com-FACCCC?style=for-the-badge&logo=gmail)](mailto:shrestasanya@gmail.com)
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-SanyaShresta25-C5DFF8?style=for-the-badge\&logo=github\&logoColor=black)](https://github.com/SanyaShresta25)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sanya%20Shresta%20Jathanna-EADCFD?style=for-the-badge\&logo=linkedin\&logoColor=black)](https://www.linkedin.com/in/sanya-shresta-jathanna/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-sanyashresta.netlify.app-FBE4E4?style=for-the-badge\&logo=internet-explorer\&logoColor=black)](https://sanyashresta.netlify.app/)
+[![Email](https://img.shields.io/badge/Email-shrestasanya@gmail.com-FCDDEC?style=for-the-badge\&logo=gmail\&logoColor=black)](mailto:shrestasanya@gmail.com)
+
+</div>
 
 ---
+
+### 🪄 Notes:
+
+* These badge color codes were selected from pastel color palettes to enhance aesthetics.
+* You can use [Shields.io](https://shields.io/) and pick your custom `color` hex for each badge.
+* All links remain clickable in markdown, and this layout looks especially beautiful when rendered in Canva Docs or GitHub README.
+
+Would you like me to convert this to a `.md` file or Canva image layout?
+
 
 > 💡 Built for learning, styled with love, and routed with precision 🚀
