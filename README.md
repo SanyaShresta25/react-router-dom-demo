@@ -26,10 +26,6 @@ A modern React demo application using **React Router DOM v6** showcasing routing
 
 ---
 
-Here's a more **aesthetic and pastel-themed version** of your `Tech Stack` and `Connect with Me` sections. The badge styles now use **softer tones**, better contrast, and an overall pleasing visual layout — ideal for a professional and visually polished README or Canva layout.
-
----
-
 ## ⚙️ Tech Stack
 
 <div align="center">
