@@ -6,8 +6,8 @@ const Users = () => {
 
   useEffect(() => {
     fetch('https://dummyjson.com/users/1')
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         setUser(data);
         setLoading(false);
       })
@@ -16,23 +16,23 @@ const Users = () => {
 
   if (loading)
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
-        <p className="text-lg text-gray-700">Loading user...</p>
+      <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-black">
+        <p className="text-lg text-gray-700 dark:text-white">Loading user...</p>
       </div>
     );
 
   if (!user)
     return (
-      <div className="min-h-screen flex items-center justify-center text-gray-500 text-center px-4">
+      <div className="min-h-screen flex items-center justify-center text-gray-500 dark:text-gray-400 text-center px-4">
         User not found
       </div>
     );
 
   return (
-    <div className="min-h-screen bg-gray-100 px-4 py-10">
+    <div className="min-h-screen bg-gray-100 dark:bg-black px-4 py-10">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-black">User Profile</h1>
-        <div className="bg-white p-6 sm:p-8 rounded-xl shadow space-y-6 text-sm sm:text-base text-gray-700 break-words">
+        <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-black dark:text-white">User Profile</h1>
+        <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-xl shadow space-y-6 text-sm sm:text-base text-gray-700 dark:text-gray-300 break-words">
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <img
               src={user.image}
@@ -40,10 +40,10 @@ const Users = () => {
               className="w-24 h-24 rounded-full"
             />
             <div className="text-center sm:text-left">
-              <h2 className="text-xl font-semibold text-black">
+              <h2 className="text-xl font-semibold text-black dark:text-white">
                 {user.firstName} {user.lastName}
               </h2>
-              <p className="text-gray-600">{user.email}</p>
+              <p className="text-gray-600 dark:text-gray-400">{user.email}</p>
             </div>
           </div>
 

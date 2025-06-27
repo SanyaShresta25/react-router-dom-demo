@@ -1,12 +1,12 @@
 import { Mail, Linkedin, Globe, Code, Link } from 'lucide-react';
 
 const Contact = () => (
-  <div className="min-h-screen bg-gray-100 px-4 py-10 flex items-center justify-center">
+  <div className="min-h-screen bg-gray-100 dark:bg-black px-4 py-10 flex items-center justify-center">
     <div className="w-full max-w-4xl">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-black text-center sm:text-left">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-black dark:text-white text-center sm:text-left">
         Contact
       </h1>
-      <div className="bg-white rounded-xl shadow-md p-6 sm:p-8 space-y-4 text-gray-800">
+      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 sm:p-8 space-y-4 text-gray-800 dark:text-gray-200">
         <p className="text-sm sm:text-base md:text-lg">
           Feel free to connect with me through the platforms below:
         </p>

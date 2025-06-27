@@ -13,16 +13,16 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-black px-4">
       <form
         onSubmit={handleLogin}
-        className="bg-white shadow-lg rounded px-6 py-8 w-full max-w-sm"
+        className="bg-white dark:bg-gray-800 shadow-lg rounded px-6 py-8 w-full max-w-sm"
         aria-label="Login Form"
       >
-        <h2 className="text-2xl font-bold mb-6 text-center text-black">Login</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center text-black dark:text-white">Login</h2>
 
         <div className="mb-4">
-          <label htmlFor="username" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="username" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
             Username
           </label>
           <input
@@ -33,12 +33,12 @@ const Login = () => {
             onChange={(e) => setUsername(e.target.value)}
             placeholder="Enter username"
             required
-            className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-black text-gray-700"
+            className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
           />
         </div>
 
         <div className="mb-6">
-          <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="password" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
             Password
           </label>
           <input
@@ -49,13 +49,13 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Enter password"
             required
-            className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-black text-gray-700"
+            className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white"
           />
         </div>
 
         <button
           type="submit"
-          className="w-full bg-black text-white font-semibold py-2 rounded hover:bg-gray-800 transition-colors"
+          className="w-full bg-black dark:bg-white text-white dark:text-black font-semibold py-2 rounded hover:bg-gray-800 dark:hover:bg-gray-300 transition-colors"
         >
           Sign In
         </button>
