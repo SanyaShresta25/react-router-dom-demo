@@ -16,7 +16,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
   useEffect(() => {
     localStorage.setItem('theme', theme);
-    document.documentElement.className = theme; // Tailwind style class
+    document.documentElement.className = theme; 
   }, [theme]);
 
   const toggleTheme = () => {

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Meta from '../components/Meta';
 
 const Users = () => {
   const [user, setUser] = useState<any>(null);
@@ -16,34 +17,40 @@ const Users = () => {
 
   if (loading)
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-black">
-        <p className="text-lg text-gray-700 dark:text-white">Loading user...</p>
+      <div className="min-h-screen flex items-center justify-center bg-blue-crystal dark:bg-gray-900">
+        <p className="text-lg text-pink-punch dark:text-gray-300">Loading user...</p>
       </div>
     );
 
   if (!user)
     return (
-      <div className="min-h-screen flex items-center justify-center text-gray-500 dark:text-gray-400 text-center px-4">
+      <div className="min-h-screen flex items-center justify-center text-pink-punch dark:text-gray-400 text-center px-4">
         User not found
       </div>
     );
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-black px-4 py-10">
+    <div className="min-h-screen bg-blue-crystal dark:bg-gray-900 px-4 py-10">
+      <Meta
+        title="User Profile"
+        description="Explore user profile information including personal, company, and crypto details."
+      />
+
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-black dark:text-white">User Profile</h1>
-        <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-xl shadow space-y-6 text-sm sm:text-base text-gray-700 dark:text-gray-300 break-words">
+        <h1 className="text-2xl sm:text-3xl font-serif font-bold mb-6 text-pink-punch dark:text-white">
+          User Profile
+        </h1>
+
+        <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-xl shadow space-y-6 text-sm sm:text-base text-black dark:text-white break-words">
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <img
               src={user.image}
               alt={`${user.firstName} ${user.lastName}`}
-              className="w-24 h-24 rounded-full"
+              className="w-24 h-24 rounded-full border-4 border-pink-punch dark:border-pink-punch"
             />
             <div className="text-center sm:text-left">
-              <h2 className="text-xl font-semibold text-black dark:text-white">
-                {user.firstName} {user.lastName}
-              </h2>
-              <p className="text-gray-600 dark:text-gray-400">{user.email}</p>
+              <h2 className="text-xl font-semibold">{user.firstName} {user.lastName}</h2>
+              <p className="text-muted dark:text-gray-300 opacity-90">{user.email}</p>
             </div>
           </div>
 
@@ -65,8 +72,7 @@ const Users = () => {
             <p><strong>University:</strong> {user.university}</p>
 
             <p>
-              <strong>Address:</strong> {user.address?.address}, {user.address?.city},{' '}
-              {user.address?.state} - {user.address?.postalCode}, {user.address?.country}
+              <strong>Address:</strong> {user.address?.address}, {user.address?.city}, {user.address?.state} - {user.address?.postalCode}, {user.address?.country}
             </p>
 
             <p><strong>Company:</strong> {user.company?.name}</p>
@@ -74,9 +80,7 @@ const Users = () => {
             <p><strong>Title:</strong> {user.company?.title}</p>
 
             <p>
-              <strong>Company Address:</strong> {user.company?.address?.address},{' '}
-              {user.company?.address?.city}, {user.company?.address?.state} -{' '}
-              {user.company?.address?.postalCode}, {user.company?.address?.country}
+              <strong>Company Address:</strong> {user.company?.address?.address}, {user.company?.address?.city}, {user.company?.address?.state} - {user.company?.address?.postalCode}, {user.company?.address?.country}
             </p>
 
             <div>

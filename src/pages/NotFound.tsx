@@ -1,10 +1,17 @@
 import { useNavigate } from 'react-router-dom';
+import Meta from '../components/Meta';
 
 const NotFound = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-black flex items-center justify-center px-4 py-10">
+    
+      <Meta
+        title="404 - Page Not Found"
+        description="The page you're looking for doesn't exist or has been moved."
+      />
+
       <div className="text-center">
         <div className="text-6xl sm:text-8xl md:text-9xl font-bold text-gray-300 dark:text-gray-600 mb-4">
           404
