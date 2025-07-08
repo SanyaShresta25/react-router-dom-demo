@@ -1,6 +1,7 @@
 import type { RouteObject } from 'react-router-dom';
 import Layout from './components/Layout';
 import ProtectedRoute from './components/ProtectedRoute';
+import PublicOnlyRoute from './components/PublicRoute'; 
 
 import Landing from './pages/Landing';
 import About from './pages/About';
@@ -16,8 +17,13 @@ const routes: RouteObject[] = [
     path: '/',
     element: <Layout />,
     children: [
-      { index: true, element: <Landing /> },
-      { path: 'login', element: <Login /> },
+      {
+        element: <PublicOnlyRoute />, 
+        children: [
+          { index: true, element: <Landing /> },
+          { path: 'login', element: <Login /> },
+        ],
+      },
 
       {
         element: <ProtectedRoute />,
@@ -26,7 +32,7 @@ const routes: RouteObject[] = [
           { path: 'posts', element: <Posts /> },
           { path: 'posts/:id', element: <PostDetails /> },
           { path: 'contact', element: <Contact /> },
-           { path: 'about', element: <About /> },
+          { path: 'about', element: <About /> },
         ],
       },
 
